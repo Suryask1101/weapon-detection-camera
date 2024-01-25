@@ -1,8 +1,46 @@
-ABSTRACT: 
-Security and safety is a big concern for today's modern world. For a country to be economically strong, it must ensure a safe and secure environment for investors and tourists. Having said that, Closed Circuit Television (CCTV) cameras are being used for surveillance and to monitor activities i.e. robberies but these cameras still require human supervision and intervention. We need a system that can automatically detect these illegal activities. Despite state-of-the-art deep learning algorithms, fast processing hardware, and advanced CCTV cameras, weapon detection in real-time is still a serious challenge. Observing angle differences, occlusions by the carrier of the firearm and persons around it further enhances the difficulty of the challenge. This work focuses on providing a secure place using. CCTV footage as a source to detect harmful weapons by applying the state of the art open-source deep Learning algorithms. We have implemented binary classification assuming pistol class as the reference class and relevant confusion objects inclusion concept is introduced to reduce false positives and false negatives. No standard dataset was available for real time scenario so we made our own dataset by making weapon photos from our own camera, manually collected images from internet by using these images we trained it .some of the algorithm we used is YOLOv3, and YOLOv4. Precision and recall count the most rather than accuracy when object detection is performed so these entire algorithms were tested in terms of them. Yolov4 stands out best amongst all other algorithms and gave a Fl -score of 91% along with a mean average precision of 91.73%higher than previously achieved. 
-Objectives:
- The aim of the project is to detect the weapon using surveillance camera in live
- It gives the alert sound when weapon is detected
- To control the crime rate done with the gun
- No need the manpower
- It decreases the crime rate
+The project, "Weapon Detection for Smart Surveillance System," addresses the critical issue of increasing crime rates associated with the presence of firearms. Developed in Python, the application utilizes CCTV cameras to detect weapons in real-time. Here's a summary in bullet points:
+
+Objective:
+*Detect weapons in real-time using CCTV cameras.
+*Mitigate the impact of increasing crime rates, particularly in regions where firearm possession is legal.
+
+Technology Stack:
+*Developed in Python.
+*Utilizes YOLOv4 (You Only Look Once, version 4) for object detection.
+
+Dataset Handling:
+*Training dataset stored on Google Drive.
+*Leveraging Google Colab for efficient retrieval and training.
+
+Training Approach:
+ Training divided into two sessions:
+  *Single-class object detection.
+  *Multiple-class object detection.
+  
+Significance of CCTV Cameras:
+*CCTV cameras are pivotal for enhancing security, crime investigation, and overall safety.
+*Key evidence in legal proceedings, with footage playing a crucial role in courts.
+
+Challenges Addressed:
+*High crime rates related to firearm possession.
+*Difficulty in manual monitoring of surveillance cameras by operators.
+
+Solution Overview:
+*Automate weapon detection using surveillance cameras.
+*Raise alarms to alert operators or security personnel upon detection.
+
+Evolution of Surveillance Technology:
+*Historically, surveillance cameras were challenging to use effectively for security.
+*Operators monitored multiple screens for extended hours, leading to decreased attention and effectiveness.
+
+Contribution of Deep Learning:
+*Recent advancements in deep learning, particularly Convolutional Neural Networks (CNNs), have revolutionized surveillance.
+*CNNs, especially YOLOv4, provide groundbreaking results in object detection.
+
+Current State of Research:
+*Limited work on algorithms for weapon detection in surveillance cameras.
+*Existing studies often focus on Concealed Weapon Detection (CWD).
+
+Conclusion:
+*The project aims to contribute to automatic weapon detection in surveillance cameras, enhancing the efficiency of security systems.
+*Recognizes the potential of deep learning, particularly CNNs, in addressing security challenges.
